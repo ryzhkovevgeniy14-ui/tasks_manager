@@ -27,7 +27,8 @@ class TaskCreate(BaseModel):
         str | None,
         Field(
             default=None,
-            description="Описание задачи")
+            description="Описание задачи"
+        )
     ]
     status: Annotated[
         Status,
