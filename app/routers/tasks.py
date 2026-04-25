@@ -15,7 +15,7 @@ async def create_task(task: TaskCreate):
 
 
 # Эндпоинт для получения списка всех задач
-@router.get("", response_model=list[Task])
+@router.get("/", response_model=list[Task])
 async def get_tasks():
     return task_service.get_tasks()
 
